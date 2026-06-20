@@ -187,6 +187,7 @@
           <a href="#formacion"       class="text-slate-300 hover:text-white nav-link">Formación</a>
           <a href="#certificaciones" class="text-slate-300 hover:text-white nav-link">Certificaciones</a>
           <a href="#referencias"     class="text-slate-300 hover:text-white nav-link">Referencias</a>
+          <a href="#consultas"       class="text-slate-300 hover:text-white nav-link">Consultas</a>
           <a href="#contacto"
              class="bg-[#1E40AF] text-white px-4 py-2 rounded-lg cursor-pointer btn-press hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-[#0F172A]">
             Contacto
@@ -215,6 +216,7 @@
         <a href="#formacion"       class="block py-2 text-slate-300 hover:text-white transition-colors duration-200">Formación</a>
         <a href="#certificaciones" class="block py-2 text-slate-300 hover:text-white transition-colors duration-200">Certificaciones</a>
         <a href="#referencias"     class="block py-2 text-slate-300 hover:text-white transition-colors duration-200">Referencias</a>
+        <a href="#consultas"       class="block py-2 text-slate-300 hover:text-white transition-colors duration-200">Consultas</a>
         <a href="#contacto"        class="block py-2 text-slate-300 hover:text-white transition-colors duration-200">Contacto</a>
       </div>
     </div>
@@ -657,6 +659,137 @@
       </div>
     </section>
 
+    <!-- ░░ CONSULTAS PARTICULARES ░░ -->
+    <section id="consultas" class="bg-white py-20" aria-label="Consultas particulares">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-12 reveal">
+          <h2 class="text-3xl sm:text-4xl font-bold text-[#0F172A] mb-3">Consultas Particulares</h2>
+          <div class="w-12 h-[3px] bg-[#1E40AF] mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Info cards -->
+        <div class="grid sm:grid-cols-2 gap-5 mb-10">
+
+          <div class="card reveal d-0 flex items-start gap-4 bg-[#F8FAFC] rounded-xl p-5 border border-[#E2E8F0]">
+            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-5 h-5 text-[#1E40AF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-[#0F172A] mb-1">Horario de atención</h3>
+              <p class="text-[#334155] text-sm">Lunes a viernes</p>
+              <p class="text-[#1E40AF] font-semibold text-sm mt-0.5">8:00 AM – 1:00 PM</p>
+            </div>
+          </div>
+
+          <div class="card reveal d-1 flex items-start gap-4 bg-[#F8FAFC] rounded-xl p-5 border border-[#E2E8F0]">
+            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-5 h-5 text-[#1E40AF]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-semibold text-[#0F172A] mb-1">Ubicación</h3>
+              <p class="text-[#334155] text-sm">Edificio Horizonte</p>
+              <a href="https://maps.google.com/?q=Edificio+Horizonte+Bogota" target="_blank" rel="noopener noreferrer"
+                 class="text-[#1E40AF] text-xs font-medium hover:underline mt-0.5 inline-block">
+                Ver en Google Maps →
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Booking form -->
+        <div class="reveal bg-[#F8FAFC] rounded-2xl border border-[#E2E8F0] p-6 sm:p-8">
+          <h3 class="font-semibold text-[#0F172A] text-lg mb-6">Solicitar cita</h3>
+
+          <form id="booking-form" novalidate class="space-y-5">
+
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="booking-name" class="block text-sm font-medium text-[#0F172A] mb-1.5">Nombre completo <span class="text-red-500" aria-hidden="true">*</span></label>
+                <input type="text" id="booking-name" name="name" required placeholder="Tu nombre"
+                       class="w-full px-4 py-2.5 rounded-lg border border-[#E2E8F0] bg-white text-[#0F172A] text-sm placeholder-slate-400
+                              focus:outline-none focus:ring-2 focus:ring-[#1E40AF] focus:border-transparent
+                              transition-shadow duration-200" />
+                <p id="err-name" class="hidden text-red-500 text-xs mt-1">Por favor ingresa tu nombre.</p>
+              </div>
+
+              <div>
+                <label for="booking-phone" class="block text-sm font-medium text-[#0F172A] mb-1.5">WhatsApp <span class="text-red-500" aria-hidden="true">*</span></label>
+                <input type="tel" id="booking-phone" name="phone" required placeholder="310 000 0000"
+                       class="w-full px-4 py-2.5 rounded-lg border border-[#E2E8F0] bg-white text-[#0F172A] text-sm placeholder-slate-400
+                              focus:outline-none focus:ring-2 focus:ring-[#1E40AF] focus:border-transparent
+                              transition-shadow duration-200" />
+                <p id="err-phone" class="hidden text-red-500 text-xs mt-1">Por favor ingresa tu número de WhatsApp.</p>
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="booking-date" class="block text-sm font-medium text-[#0F172A] mb-1.5">Fecha preferida <span class="text-red-500" aria-hidden="true">*</span></label>
+                <input type="date" id="booking-date" name="date" required
+                       class="w-full px-4 py-2.5 rounded-lg border border-[#E2E8F0] bg-white text-[#0F172A] text-sm
+                              focus:outline-none focus:ring-2 focus:ring-[#1E40AF] focus:border-transparent
+                              transition-shadow duration-200" />
+                <p id="err-date" class="hidden text-red-500 text-xs mt-1">Solo se atiende de lunes a viernes.</p>
+              </div>
+
+              <div>
+                <label for="booking-time" class="block text-sm font-medium text-[#0F172A] mb-1.5">Hora preferida <span class="text-red-500" aria-hidden="true">*</span></label>
+                <select id="booking-time" name="time" required
+                        class="w-full px-4 py-2.5 rounded-lg border border-[#E2E8F0] bg-white text-[#0F172A] text-sm
+                               focus:outline-none focus:ring-2 focus:ring-[#1E40AF] focus:border-transparent
+                               transition-shadow duration-200 cursor-pointer">
+                  <option value="" disabled selected>Selecciona una hora</option>
+                  <option value="8:00 AM">8:00 AM</option>
+                  <option value="8:30 AM">8:30 AM</option>
+                  <option value="9:00 AM">9:00 AM</option>
+                  <option value="9:30 AM">9:30 AM</option>
+                  <option value="10:00 AM">10:00 AM</option>
+                  <option value="10:30 AM">10:30 AM</option>
+                  <option value="11:00 AM">11:00 AM</option>
+                  <option value="11:30 AM">11:30 AM</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="12:30 PM">12:30 PM</option>
+                </select>
+                <p id="err-time" class="hidden text-red-500 text-xs mt-1">Por favor selecciona una hora.</p>
+              </div>
+            </div>
+
+            <div>
+              <label for="booking-reason" class="block text-sm font-medium text-[#0F172A] mb-1.5">Motivo de consulta <span class="text-red-500" aria-hidden="true">*</span></label>
+              <textarea id="booking-reason" name="reason" required rows="3" placeholder="Describe brevemente el motivo de tu consulta..."
+                        class="w-full px-4 py-2.5 rounded-lg border border-[#E2E8F0] bg-white text-[#0F172A] text-sm placeholder-slate-400 resize-none
+                               focus:outline-none focus:ring-2 focus:ring-[#1E40AF] focus:border-transparent
+                               transition-shadow duration-200"></textarea>
+              <p id="err-reason" class="hidden text-red-500 text-xs mt-1">Por favor describe el motivo de tu consulta.</p>
+            </div>
+
+            <button type="submit"
+                    class="btn-press w-full flex items-center justify-center gap-2.5 bg-[#1E40AF] hover:bg-blue-700 text-white font-semibold text-sm px-6 py-3.5 rounded-xl cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+              <!-- WhatsApp icon -->
+              <svg class="w-5 h-5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.857L.057 23.882a.5.5 0 00.611.611l6.025-1.476A11.944 11.944 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.65-.52-5.16-1.426l-.37-.22-3.827.938.956-3.827-.242-.384A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+              </svg>
+              Solicitar cita por WhatsApp
+            </button>
+
+            <p class="text-center text-xs text-[#475569]">
+              Te confirmaré la disponibilidad a la brevedad.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
     <!-- ░░ CONTACTO ░░ -->
     <section id="contacto" class="bg-[#0F172A] py-20" aria-label="Contacto">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -754,6 +887,63 @@
     }, { threshold: 0.12 });
 
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ── Booking form → WhatsApp ───────────────────────────
+    const DAYS_ES = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+    const MONTHS_ES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+
+    document.getElementById('booking-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name   = document.getElementById('booking-name').value.trim();
+      const phone  = document.getElementById('booking-phone').value.trim();
+      const date   = document.getElementById('booking-date').value;
+      const time   = document.getElementById('booking-time').value;
+      const reason = document.getElementById('booking-reason').value.trim();
+
+      // Validate
+      let valid = true;
+      const show = (id, show) => document.getElementById(id).classList.toggle('hidden', !show);
+
+      show('err-name',   !name);   if (!name)   valid = false;
+      show('err-phone',  !phone);  if (!phone)  valid = false;
+      show('err-time',   !time);   if (!time)   valid = false;
+      show('err-reason', !reason); if (!reason) valid = false;
+
+      // Check Mon–Fri
+      let dateErr = false;
+      if (!date) {
+        dateErr = true; valid = false;
+      } else {
+        const [y, m, d] = date.split('-').map(Number);
+        const dow = new Date(y, m - 1, d).getDay();
+        if (dow === 0 || dow === 6) { dateErr = true; valid = false; }
+      }
+      show('err-date', dateErr);
+
+      if (!valid) return;
+
+      // Format date in Spanish
+      const [y, m, d] = date.split('-').map(Number);
+      const dateObj = new Date(y, m - 1, d);
+      const dateStr = `${DAYS_ES[dateObj.getDay()]} ${d} de ${MONTHS_ES[m - 1]} de ${y}`;
+
+      const msg =
+        `Hola Dr. Márquez, me gustaría agendar una consulta particular.\n\n` +
+        `*Nombre:* ${name}\n` +
+        `*WhatsApp:* ${phone}\n` +
+        `*Fecha preferida:* ${dateStr}\n` +
+        `*Hora preferida:* ${time}\n` +
+        `*Motivo:* ${reason}\n\n` +
+        `Quedo atento/a a su confirmación. ¡Gracias!`;
+
+      window.open(`https://wa.me/573108629418?text=${encodeURIComponent(msg)}`, '_blank');
+    });
+
+    // Set min date to today on the date picker
+    const dateInput = document.getElementById('booking-date');
+    const today = new Date();
+    dateInput.min = today.toISOString().split('T')[0];
 
     // ── Active nav link on scroll ─────────────────────────
     const sections = document.querySelectorAll('section[id]');
